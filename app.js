@@ -2,11 +2,21 @@ function pesquisar(){
   let section = document.getElementById("resultados-pesquisa");
 
   let campoPesquisa = document.getElementById("campo-pesquisa").value
+    if (!campoPesquisa) {
+      
+          section.innerHTML = "Você precisa digitar uma palavra"
+          return
+        }
+      campoPesquisa = campoPesquisa.toLowerCase()
+       let resultados = "";
+      let definicao = "";
+      let termo = "";
 
-  let resultados = ""
   for (let dadoTermo of dadosTermos){
+    termo = dadoTermo.termo.toLowerCase()
+    definicao = dadoTermo.definicao.toLowerCase()
 
-    if( dadoTermo.termo.includes(campoPesquisa)){
+    if( termo.includes(campoPesquisa) || definicao.includes(campoPesquisa) ){
     resultados += `
           <div class="item-resultado">
           <h2> 
@@ -17,8 +27,9 @@ function pesquisar(){
             <a href= ${dadoTermo.link} target="_blank">Mais informações</a>
     </div> 
             `;
-    }  if (!resultados) {
-      resultados = '<p >Nenhum resultado encontrado</p>';
+    } 
+    if (!resultados) {
+      resultados = "<p > Nenhum resultado encontrado</p>"
     }
    
 }
