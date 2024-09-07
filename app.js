@@ -28,11 +28,11 @@ function pesquisar(){
     </div> 
             `;
     } 
-    if (resultados==0) {
+    
+   
+}if (!resultados) {
       resultados = "<p > Nenhum resultado encontrado</p>"
     }
-   
-}
 
 section.innerHTML = resultados
 }
