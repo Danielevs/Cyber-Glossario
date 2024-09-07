@@ -9,5 +9,5 @@ Este site foi desenvolvido durante a Imersão Dev com Google Gemini e Alura .
 - JavaScript para a lógica de programação e interatividade.
 - As palavras foram fornecidas pelo Google Gemini
 
-Você pode acessar utilizando o link 
-[![Build Status]([https://github.com/Danielevs/Cyber-Glossario/actions](https://cyber-glossario.vercel.app/))
+Você pode acessar utilizando o link:
+https://cyber-glossario.vercel.app/
