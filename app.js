@@ -28,7 +28,7 @@ function pesquisar(){
     </div> 
             `;
     } 
-    if (!resultados) {
+    if (resultados=="") {
       resultados = "<p > Nenhum resultado encontrado</p>"
     }
    
