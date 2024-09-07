@@ -1,4 +1,4 @@
-const termosCiberseguranca = [
+const dadosTermos = [
     {
         termo: "Phishing",
         definicao: "Técnica de engenharia social que induz uma pessoa a fornecer informações confidenciais.",
